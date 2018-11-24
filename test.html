@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			html,body{
+				width:100%;
+				height:100%;
+			}
+			div{
+				position: absolute;
+				transform-origin: left top;
+			}
+			.peiqi{
+				width: 600px;
+				height:600px;
+				margin: 0 auto;
+				position: relative;
+			}
+			.zhutou{
+				width: 270px;
+                height: 130px;
+                top: 50px;
+                left: 100px;
+                border-radius: 95% 50% 50% 50%/ 87% 80% 68% 50%;
+                border: 6px solid #ef96c2;
+                background-color: #ffb3da;
+                transform: rotate(30deg);
+                z-index: 100;
+                box-sizing: border-box;
+			}
+			.erduo{
+				top:65px;
+				left:190px;
+			}
+			.er-left,.er-right{
+				width: 24px;
+                height: 52px;
+                border: 6px solid #ef96c2;
+                border-radius: 50% 50% 50% 50%/ 35% 40% 50% 50%;
+                background-color: #ffb3da;
+                z-index: -1;
+                transform: rotate(18deg);
+			}
+			.er-right{
+				top:20px;
+				left:55px;
+			}
+			.bizi{
+				width:51px;
+				height:70px;
+				border-radius: 72% 72% 72% 72%/ 72% 72% 72% 72%;
+				border:  6px solid #ef96c2;
+				transform: rotate(36deg);
+				background: #ffb3da;
+				left:25px;
+				top:12px;
+				z-index: 100;
+			}
+			.bi-left,.bi-right{
+				width:12px;
+				height: 12px;
+				color: #da6c9b;
+				border:solid currentcolor;
+				background: currentcolor;
+				box-sizing: border-box;
+				border-radius: 50%;
+			}
+			.bi-left{
+				top:32px;
+				left:7px;
+			}
+		   .bi-right{
+		   	   top:25px;
+		   	   left:30px;
+		   }
+		   .yanjing{
+		   	top:10px;
+		   	left:80px;
+		   }
+		   .yuan-left,.yuan-right{
+			width:34px;
+			height:34px;
+			border:6px solid #ef96c2;
+			background: #FFFFFF;
+			box-sizing: border-box;
+			border-radius: 50%;
+			z-index: 100;
+		   }
+		   .yuan-right{
+		   	left: 50px;
+		   }
+		   .yanjing .yuan-left .yanzhu1,.yanjing .yuan-right .yanzhu2{
+		   	width:10px;
+		   	height:10px;
+		   	border-radius: 50%;
+		   	background: #000000;
+		   	z-index: 99;
+		   	top:5px;
+		   }
+		   .lianjia{
+		   	    width: 49px;
+                height: 59px;
+                border-radius: 50%;
+                background-color: #ff96ce;
+                transform: rotate(26deg);
+                top:20px;
+                left:120px;
+		   }
+		  .zhuxaimian{
+		    width: 215px;
+		    height: 197px;
+		    border: 6px solid #e33b32;
+		    border-radius: 50% 50% 50% 50%/ 100% 100% 0% 0%;
+		    background-color: #eb5b50;
+		    z-index: 1;
+		    transform:rotate(-30deg);
+		    top:140px;
+		    left:120px;
+		  }
+		  .zhujiao{
+		  	top:290px;
+		  	left:270px;
+		  }
+		  .jiao-left,.jiao-right{
+		  	width:8px;
+		  	height:85px;
+		  	background: #000000;
+		  	transform: rotate(-30deg);
+		  }
+		  .jiao-right{
+		  	left:100px;
+		  	top:-55px;
+		  }
+		  .zhu1,.zhu2{
+			width: 51px;
+		    height: 14px;
+		    border-radius: 58% 187% 180% 50%/ 130% 123% 113% 100%;
+		    background-color: #000;
+		    z-index: 99;
+		    transform: rotate(0deg);
+		    top:80px;
+		    left: -25px;
+		  }
+		  .zhushou-right .hand_right_bottom,.zhushou-left .hand_right_bottom{
+		  	    width: 79px;
+			    height: 11px;
+			    border-radius: 100% 100% 15% 17%/ 99% 92% 90% 90%;
+			    background-color: #ffbadf;
+			    z-index: 99;
+			    transform: rotate(5deg);
+			    top:80px;
+			    left:300px;
+		  }
+		  .zhushou-right .hand_right_top,.zhushou-left .hand_right_top{
+		  	    width: 28px;
+			    height: 10px;
+			    border-radius: 100% 100% 15% 17%/ 99% 92% 90% 90%;
+			    background-color: #ffbadf;
+			    z-index: 99;
+			    transform: rotate(-15deg);
+			    top:82px;
+			    left:350px;
+		  }
+		  .zhushou-right .hand_right_middle,.zhushou-left .hand_right_middle{
+		  	    width: 28px;
+			    height: 11px;
+			    border-radius: 100% 100% 62% 17%/ 99% 92% 90% 90%;
+			    background-color: #ffbadf;
+			    z-index: 99;
+			    transform: rotate(56deg);
+			    top:82px;
+			    left:360px;
+		  }
+		 .zhushou-left{
+		 	z-index: 1000;
+		 	top:-150px;
+		 	left:270px;
+		 	transform: rotate(90deg);
+		 }
+		</style>
+	</head>
+	<body>
+		<div class="peiqi">
+			<!--耳朵-->
+			<div class="erduo">
+				<div class="er-left"></div>
+				<div class="er-right"></div>
+			</div>
+			<!--猪头-->
+		<div class="zhutou">
+			<!--鼻子-->
+		<div class="bizi">
+			<!--两个鼻孔-->
+			<div class="bi-left"></div>
+			<div class="bi-right"></div>
+		</div>
+		    <!--眼睛-->
+		<div class="yanjing">
+			<div class="yuan-left">
+				<div class="yanzhu1"></div>
+			</div>
+			<div class="yuan-right">
+				<div class="yanzhu2"></div>	
+			</div>
+			<!--脸颊-->
+		    <div class="lianjia"></div>
+		</div>
+	  		<!--猪身体-->
+		<div class="zhuxaimian"></div>
+			<!--猪脚-->
+			<div class="zhujiao">
+				<div class="jiao-left">
+					<div class="zhu1"></div>
+				</div>
+				<div class="jiao-right">
+					<div class="zhu2"></div>
+				</div>
+			</div>
+		   <!-- 猪手 -->
+	    <div class="zhushou-right">
+			<div class="hand_right_top"></div>
+			<div class="hand_right_bottom"></div>
+			<div class="hand_right_middle"></div>
+	    </div>
+        <div class="zhushou-left">
+			<div class="hand_right_top"></div>
+			<div class="hand_right_bottom"></div>
+			<div class="hand_right_middle"></div>
+	    </div>
+		</div>
+	</body>
+</html>
